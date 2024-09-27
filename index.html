@@ -27,7 +27,7 @@
 
           <ul class="menu list">
             <li class="list-item">
-              <a class="item link" href="./index.html">Studio</a>
+              <a class="active item link" href="./index.html">Studio</a>
             </li>
             <li class="list-item">
               <a class="item link" href="./portfolio.html">Portfolio</a>
@@ -59,11 +59,17 @@
     <main>
       <!-- 1stsection -->
       <section class="first-section">
-        <div class="container">
-          <h1 class="main-header">Effective Solutions for Your Business</h1>
-          <button class="button" type="button">Order Service</button>
+          <div class="container hero-container">
+        <h1 class="main-header">Effective Solutions for Your Business</h1>
+        <!-- Modal Start HW05 -->
+        <button class="hero-button" type="button" data-modal-open>Order Services</button>
+        <div class="boxing is-hidden" data-modal>
+          <div class="modal">
+            <button class="modal-close-button" data-modal-close>&times;</button>
+          </div> 
         </div>
-      </section>
+    </section>
+    </div>
 
       <!-- 2ndsection-->
       <section class="second-section">
@@ -612,5 +618,10 @@
         </div>
       </div>
     </footer>
+
+    
+    <!-- For HW05 Modal JS -->
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
